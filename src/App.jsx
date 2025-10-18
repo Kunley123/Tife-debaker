@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <CartProvider>
-        <Router>
+        <Router basename="/Tife-debaker">
           <ScrollToTop />
           <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           < MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
