@@ -4,7 +4,7 @@ import aboutImg from '../../assets/images/IMG_0839.PNG'
 export const About = () => {
     return (
         <section id="about" className="min-h-screen flex items-center justify-center py-20">
-            <div className="max-w-3xl  mx-auto px-4">
+            <div className="max-w-4xl w-full mx-auto px-4">
 
                 <div className="flex flex-row rounded-xl p-8 border-black/10 border  transition-all hover:shadow-lg">
                     <div className="flex flex-col pt-3">
@@ -17,7 +17,7 @@ export const About = () => {
                         </p>
                     </div>
 
-                    <img src={aboutImg} className=" ml-10 pb-10 h-60 max-w-50" alt="image" />
+                    <img src={aboutImg} className=" ml-10 pb-10 w-full h-auto md:w-1/2" alt="image" />
                 </div>
             </div>
         </section>
