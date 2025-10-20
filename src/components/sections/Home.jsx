@@ -4,16 +4,16 @@ import cakeImg from '../../assets/images/IMG_0836.PNG'
 
 export const Home = () => {
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center relaive">
-            <div className="flex flex-col justify-center overflow-hidden max-w-screen  mx-4 items-center min-h-screen">
+        <section id="home" className="md:min-h-screen flex items-center justify-center py-20 relaive">
+            <div className="flex flex-col justify-center overflow-hidden max-w-screen  mx-4 items-center ">
                 <div className="text-center items-center justify-center flex flex-row px-4">
                     <div className="flex flex-col items-center w-full md:max-w-lg justify-center text-center">
-                        <h1 className="text-5xl md:text:7xl text-[#3e2c23] font-bold mb-6 "> Freshly Baked Happiness Everyday</h1>
+                        <h1 className="text-2xl md:text-5xl text-[#3e2c23] font-bold mb-6 "> Freshly Baked Happiness Everyday</h1>
                         <a href="#product"><button className="rounded-full mt-3 p-1 bg-[#e67e22] text-[#3e2c23] cursor-pointer text-white text-[10px] font-bold w-35 px-2">ORDER NOW</button></a>
                     </div>
-                    <img src={cakeImg} alt="cake" className="w-full pt-4 md:max-w-lg mb-12" />
+                    <img src={cakeImg} alt="cake" className="w-full pt-4 md:max-w-lg object-cover mb-12" />
                 </div>
-                <p className="text-5xl md:text:7xl animate-moveRight text-[#3e2c23] font-bold mb-6">Welcome To My Cake Shop. Freshly Baked everyday. Make Your Choice Now!</p>
+                <p className="text-2xl md:text-5xl animate-moveRight text-[#3e2c23] font-bold mb-6">Welcome To My Cake Shop. Freshly Baked everyday. Make Your Choice Now!</p>
             </div>
 
         </section>

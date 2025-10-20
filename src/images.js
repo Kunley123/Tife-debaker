@@ -9,7 +9,7 @@ export const images = [
         name: 'cake',
         src: cake,
         id: nanoid(),
-        phrase: "Creamy Vanilla and chocolate",
+        phrase: "Creamy Vanilla and chocs",
         price: "25000",
         link: "/cakes"
     },

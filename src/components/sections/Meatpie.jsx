@@ -15,7 +15,7 @@ export const Meatpies = () => {
                     })}
                 </div>
                 <Link to={"/submeatpies"}>
-                    <button className="rounded-full mt-3 p-1 bg-[#fa8072] text-[#3e2c23] cursor-pointer text-white text-[10px] font-bold w-20 px-2">More</button>
+                    <button className="rounded-full mt-3 p-1 bg-[#fa8072] text-[#3e2c23] cursor-pointer text-white text-[10px] font-bold w-20 px-2">See More</button>
                 </Link>
             </div>
         </section>
