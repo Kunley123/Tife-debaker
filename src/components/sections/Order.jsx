@@ -30,10 +30,24 @@ export const CartProvider = ({ children }) => {
         return cartItems.reduce((total, item) => total + item.total, 0)
     }
 
+    const removeFromCart = (product) => {
+        setCartItems((prevItem) => prevItem.filter((item) => item.product !== product));
+    }
+
+    const decreaseQuantity = (product) => {
+        setCartItems((prevItems) =>
+            prevItems.map((item) => item.product === product ? { ...item, quantity: item.quantity - 1, total: (item.quantity - 1) * item.price } : item).filter((item) => item.quantity > 0))
+
+    }
+
+    const increaseQuantity = (product) => {
+        setCartItems((prevItems) => prevItems.map((item) => item.product === product ? { ...item, quantity: item.quantity + 1, total: (item.quantity + 1) * item.price } : item))
+    }
+
     const clearCart = () => setCartItems([])
 
     return (
-        <CartContext.Provider value={{ cartItems, addToCart, clearCart, getTotalAmount }}>
+        <CartContext.Provider value={{ cartItems, addToCart, clearCart, getTotalAmount, removeFromCart, decreaseQuantity, increaseQuantity }}>
             {children}
         </CartContext.Provider>
     );

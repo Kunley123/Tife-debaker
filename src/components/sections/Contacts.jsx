@@ -13,6 +13,8 @@ export const Contacts = () => {
         quantity: '',
         price: '',
         total: '',
+        telephone: '',
+        address: '',
         message: ''
     })
 
@@ -27,7 +29,7 @@ export const Contacts = () => {
     // }, [formData.price, formData.quantity])
 
 
-    const { cartItems, clearCart, getTotalAmount } = useCart();
+    const { cartItems, clearCart, getTotalAmount, removeFromCart, decreaseQuantity, increaseQuantity } = useCart();
 
     const overallTotal = getTotalAmount()
 
@@ -52,6 +54,8 @@ export const Contacts = () => {
         const templateParams = {
             name: formData.name,
             email: formData.email,
+            telephone: formData.telephone,
+            address: formData.address,
             message: formData.message,
             orders: orderDetails,
             total: `₦${grandTotal.toLocaleString()}`
@@ -76,6 +80,7 @@ export const Contacts = () => {
         <section id="contact" className="py-20 min-h-screen flex flex-col justify-center items-center">
             <div className="max-w-lg md:min-w-screen flex flex-col px-4">
                 <h2 className="font-bold text-[#3e2c23] text-center text-3xl">Order/Get In Touch With Us</h2>
+                <p className="text-sm text-gray-600 text-center"><span className="font-bold">NB:</span> All products ae custom made and not ready made. Kindly make your orders 48hrs before delivery day. Thank You 🤗</p>
                 <form className="space-y-6 border grid md:grid-cols-4 m-4 gap-2 rounded-lg p-4" onSubmit={handleSubmit}>
 
                     <div className="md:col-span-4 flex flex-col justify-center items-center border p-2 rounded-lg">
@@ -85,11 +90,17 @@ export const Contacts = () => {
                                 <div key={index} className="border-b mb-2 pb-2 w-full text-[#3e2c23]">
                                     <p>Product: {item.product}</p>
                                     <p>Price: ₦{item.price}</p>
-                                    <p>Quantity: {item.quantity}</p>
+                                    <div className="flex flex-row justify-between items-center">
+                                        <p>Quantity: {item.quantity}</p>
+                                        <button type="button" className="border border-[#3e2c23] font-bold text-[black] px-4 rounded cursor-pointer" onClick={() => { increaseQuantity(item.product) }}>+</button>
+                                        <button type="button" className="border border-[#3e2c23] font-bold text-[black] px-4 rounded cursor-pointer" onClick={() => { decreaseQuantity(item.product) }}>-</button>
+                                        <button type="button" className="bg-[red] text-[white] p-1 rounded text-[8px] font-bold cursor-pointer" onClick={() => { removeFromCart(item.product) }}>remove</button>
+                                    </div>
                                     <p>Total: ₦{item.total}</p>
                                 </div>))) : (<p>No items in cart</p>
                         )}
-                        <h3 className="text-black font-bold">Overall Total:  ₦{overallTotal} </h3>
+                        <h3 className="text-[green] font-bold">Overall Total:  ₦{overallTotal} </h3>
+
 
                     </div>
 
@@ -98,6 +109,12 @@ export const Contacts = () => {
                     </div>
                     <div className="relative">
                         <input type="text" id="email" name="email" required value={formData.email} className="w-full bg-black/5 border border-white/10 rounded px-4 py-3 text-black transition focus:outline-none  focus:border-black" placeholder="example@gmail.com" onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+                    </div>
+                    <div className="relative">
+                        <input type="text" id="telephone" name="telephone" required value={formData.telephone} className="w-full bg-black/5 border border-white/10 rounded px-4 py-3 text-black transition focus:outline-none  focus:border-black" placeholder="Tel:" onChange={handleNumberChange} />
+                    </div>
+                    <div className="relative">
+                        <input type="text" id="address" name="address" required value={formData.address} className="w-full bg-black/5 border border-white/10 rounded px-4 py-3 text-black transition focus:outline-none  focus:border-black" placeholder="Address" onChange={(e) => setFormData({ ...formData, address: e.target.value })} />
                     </div>
 
                     <div className="relative">

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { HashLink } from 'react-router-hash-link'
+import LogoImage from '../assets/logoImages/NXJP3034.PNG'
 
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
@@ -9,7 +10,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     return <nav className="fixed top-0 w-full z-100 bg-cream shadow-lg backdrop-blur-lg border-b border-white/10">
         <div className="max-w-5xl mx-auto px-4">
             <div className="flex justify-between items-center h-15">
-                <a href="home" className="font-arial text-m font-bold cursor-pointer text-[#3E2C23]">Tife_luxe_bake</a>
+                <HashLink smooth to="/#home"><img alt="logo image" src={LogoImage} className="w-1/10 rounded-full" /></HashLink>
                 <div onClick={() => setMenuOpen((prev) => !prev)} className="w-7 h-5 relative cursor-pointer z-40 md:hidden">
                     &#9776;
                 </div>

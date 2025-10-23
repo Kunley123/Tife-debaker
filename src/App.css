@@ -1,0 +1,20 @@
+.app-background {
+    margin-top: 80px;
+    position: relative;
+    background-image: url('./assets/logoImages/IMG_0971.PNG');
+    background-size: contain;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: beige;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}

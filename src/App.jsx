@@ -11,6 +11,7 @@ import { Meatpies } from './components/sections/Meatpie.jsx';
 import { Doughnuts } from './components/sections/Doughnut.jsx';
 import { Crunchies } from './components/sections/Crunchy.jsx';
 import { Submeatpie } from './components/sections/subsection/Submeatpie.jsx';
+import { Suboffer } from './components/sections/subsection/SubOffers.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { CartProvider } from './components/sections/Order.jsx';
 import { ScrollToTop } from './components/sections/ScrollToTop.jsx';
@@ -23,32 +24,38 @@ function App() {
 
   return (
     <>
-      <CartProvider>
-        <Router basename="/Tife-debaker">
-          <ScrollToTop />
-          <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-          < MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-          <Routes>
-            <Route path="/" element={
-              <>
-                <Home />
-                <About />
-                <Products />
-                <Offer />
-                <Contacts />
+      <div className="app-background">
+        <div className="overlay"></div>
+        <div className="content">
+          <CartProvider>
+            <Router basename="/Tife-debaker">
+              <ScrollToTop />
+              <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+              < MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+              <Routes>
+                <Route path="/" element={
+                  <>
+                    <Home />
+                    <About />
+                    <Products />
+                    <Offer />
+                    <Contacts />
 
 
-              </>
-            } />
-            <Route path="/cakes" element={<Cakes />} />
-            <Route path="/meatpies" element={<Meatpies />} />
-            <Route path="/submeatpies" element={<Submeatpie />} />
-            <Route path="/doughnuts" element={<Doughnuts />} />
-            <Route path="/crunchies" element={<Crunchies />} />
+                  </>
+                } />
+                <Route path="/cakes" element={<Cakes />} />
+                <Route path="/meatpies" element={<Meatpies />} />
+                <Route path="/submeatpies" element={<Submeatpie />} />
+                <Route path="/suboffer" element={<Suboffer />} />
+                <Route path="/doughnuts" element={<Doughnuts />} />
+                <Route path="/crunchies" element={<Crunchies />} />
 
-          </Routes>
-        </Router>
-      </CartProvider>
+              </Routes>
+            </Router>
+          </CartProvider>
+        </div>
+      </div>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import cakeImg from '../../assets/images/IMG_0836.PNG'
+import cakeImg from '../../assets/images/IMG_0994.PNG'
 
 
 
