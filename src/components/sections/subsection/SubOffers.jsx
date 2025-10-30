@@ -24,8 +24,8 @@ export const Suboffer = () => {
                         <div className="w-full flex flex-col pb-2 bg-white/20 rounded whitespace-nowrap w-full justify-center items-center" key={offer.id}>
                             <img src={offer.src} className="w-full md:w-1/2 rounded-lg" />
                             <h1 className="font-semibold text-[#3e2c23] md:text-lg">{offer.name}</h1>
-                            <p className="font-bold text-[#3e2c23] text-[12px]">{offer.price}</p>
-                            <button className="rounded-full mt-3 p-1 bg-[#e67e22] text-[#3e2c23] cursor-pointer text-white text-[8px] font-bold w-15 md:w-20 px-2 cursor-pointer" onClick={() => handleAddProduct(offer.name, 15000, 1)}>Order</button>
+                            <p className="font-bold text-[#a67b5b] text-[12px]">{`₦${offer.price}`}</p>
+                            <button className="rounded-full mt-3 p-1 bg-[#e67e22] text-[#3e2c23] cursor-pointer text-white text-[10px] font-bold w-15 md:w-20 px-2 cursor-pointer" onClick={() => handleAddProduct(offer.name, offer.price, 1)}>Order</button>
                         </div>
                     ))}
                 </div>

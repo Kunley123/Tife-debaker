@@ -10,7 +10,6 @@ export const images = [
         src: cake,
         id: nanoid(),
         phrase: "Creamy Vanilla and chocs",
-        price: "25000",
         link: "/cakes"
     },
     {
@@ -18,7 +17,6 @@ export const images = [
         src: meatpie,
         id: nanoid(),
         phrase: "Sweels of drocutame",
-        price: "500",
         link: "/meatpies"
     },
     {
@@ -26,7 +24,6 @@ export const images = [
         src: doughnut,
         id: nanoid(),
         phrase: "Milky and tasty",
-        price: "1000",
         link: "/doughnuts"
     },
     {
@@ -34,7 +31,6 @@ export const images = [
         src: chinchin,
         id: nanoid(),
         phrase: "Crunchy to the ear",
-        price: "4000",
         link: "/crunchies"
     }
 

@@ -26,8 +26,8 @@ export function Crunchies() {
                             <div key={crunchy.id} className="flex py-4 w-full p-1 hover:bg-white md:p-4 flex-col justfiy-center items-center">
                                 <img src={crunchy.src} className="h-45 w-35 md:h-45 md:w-40" />
                                 <h1 className="font-semibold md:text-lg">{crunchy.name}</h1>
-                                <p className="font-bold text-[12px] text-[#6b5a4c]">{crunchy.price}</p>
-                                <button className="rounded-full mt-3 p-1 bg-[#fa8072] text-[#3e2c23] cursor-pointer text-white text-[10px] font-bold w-20 px-2" onClick={() => handleAddProduct(crunchy.name, crunchy.price, 1)}>Order</button>
+                                <p className="font-bold text-[12px] text-[#6b5a4c]">{`₦${crunchy.price}`}</p>
+                                <button className="rounded-full mt-3 p-1 bg-[#e67e22] text-[#3e2c23] cursor-pointer text-white text-[10px] font-bold w-20 px-2" onClick={() => handleAddProduct(crunchy.name, crunchy.price, 1)}>Order</button>
                             </div>
                         )
                     }

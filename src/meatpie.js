@@ -8,63 +8,49 @@ import meatpie7 from './assets/meatpieImages/IMG_0863.PNG'
 import meatpie8 from './assets/meatpieImages/IMG_0864.PNG'
 import meatpie9 from './assets/meatpieImages/IMG_0865.JPG'
 import meatpie10 from './assets/meatpieImages/IMUH5247.JPG'
-import meatpie11 from './assets/meatpieImages/POQK2037.JPG'
 import { nanoid } from 'nanoid'
 
 export const meatpies = [
+
     {
-        name: "meatpie1",
-        id: nanoid(),
-        src: meatpie1
-    },
-    {
-        name: "meatpie2",
+        name: "Meat Pie",
         id: nanoid(),
         src: meatpie2
     },
     {
-        name: "meatpie3",
+        name: "Meat Pie (Round)",
         id: nanoid(),
         src: meatpie3
     },
     {
-        name: "meatpie4",
+        name: "Chicken Pie",
         id: nanoid(),
         src: meatpie4
     },
     {
-        name: "meatpie5",
+        name: "Meat Pie (Brown)",
         id: nanoid(),
         src: meatpie5
     },
+
     {
-        name: "meatpie6",
-        id: nanoid(),
-        src: meatpie6
-    },
-    {
-        name: "meatpie7",
+        name: "Meat Pie",
         id: nanoid(),
         src: meatpie7
     },
     {
-        name: "meatpie8",
+        name: "Meat Pie (Not too Brown)",
         id: nanoid(),
         src: meatpie8
     },
     {
-        name: "meatpie9",
+        name: "Chicken Pie (Brown)",
         id: nanoid(),
         src: meatpie9
     },
     {
-        name: "meatpie10",
+        name: "Meat Pie (Not Brown)",
         id: nanoid(),
         src: meatpie10
-    },
-    {
-        name: "meatpie11",
-        id: nanoid(),
-        src: meatpie11
-    },
+    }
 ]

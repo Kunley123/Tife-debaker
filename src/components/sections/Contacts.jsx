@@ -19,6 +19,7 @@ export const Contacts = () => {
     })
 
 
+
     // useEffect(() => {
     //     setFormData((prev) => {
     //         return {
@@ -62,6 +63,7 @@ export const Contacts = () => {
         }
 
         emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, templateParams, import.meta.env.VITE_PUBLIC_KEY).then((result) => {
+            <p></p>
             alert("Your Order Has Been Sent")
             clearCart()
         }).catch(() => alert("Oops! Something Went Wrong, Please Try Again."))
@@ -80,7 +82,7 @@ export const Contacts = () => {
         <section id="contact" className="py-20 min-h-screen flex flex-col justify-center items-center">
             <div className="max-w-lg md:min-w-screen flex flex-col px-4">
                 <h2 className="font-bold text-[#3e2c23] text-center text-3xl">Order/Get In Touch With Us</h2>
-                <p className="text-sm text-gray-600 text-center"><span className="font-bold">NB:</span> All products ae custom made and not ready made. Kindly make your orders 48hrs before delivery day. Thank You 🤗</p>
+                <p className="text-sm text-gray-600 text-center"><span className="font-bold">NB:</span> All products are custom made and not ready made. Kindly make your orders 48hrs before delivery day. Thank You 🤗</p>
                 <form className="space-y-6 border grid md:grid-cols-4 m-4 gap-2 rounded-lg p-4" onSubmit={handleSubmit}>
 
                     <div className="md:col-span-4 flex flex-col justify-center items-center border p-2 rounded-lg">

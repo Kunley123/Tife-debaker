@@ -24,122 +24,122 @@ import { nanoid } from 'nanoid'
 export const cakes = [
     {
         src: cake1,
-        name: "vanilla",
-        price: 3000,
+        name: "Butter Cake (One layer)",
+        price: 15000,
         id: nanoid()
     },
     {
         src: cake2,
-        name: "chocolate",
-        price: 4000,
+        name: "chocolate (Two layers)",
+        price: 30000,
         id: nanoid()
     },
     {
         src: cake3,
-        name: "vanilla",
-        price: 3000,
+        name: "Bento",
+        price: 12000,
         id: nanoid()
     },
     {
         src: cake4,
-        name: "vanilla",
-        price: 3000,
+        name: "Marble Cake",
+        price: 15000,
         id: nanoid()
     },
     {
         src: cake5,
-        name: "vanilla",
-        price: 3000,
+        name: "Banana flavour",
+        price: 20000,
         id: nanoid()
     },
     {
         src: cake6,
-        name: "vanilla",
-        price: 3000,
+        name: "Oreo",
+        price: 15000,
         id: nanoid()
     },
     {
         src: cake7,
         name: "vanilla",
-        price: 3000,
+        price: 30000,
         id: nanoid()
     },
     {
         src: cake8,
-        name: "vanilla",
-        price: 3000,
+        name: "Bento Choc",
+        price: 13000,
         id: nanoid()
     },
     {
         src: cake9,
-        name: "vanilla",
-        price: 3000,
+        name: "Valentine Velvet",
+        price: 12000,
         id: nanoid()
     },
     {
         src: cake10,
-        name: "vanilla",
-        price: 3000,
+        name: "Chocolate",
+        price: 12000,
         id: nanoid()
     },
     {
         src: cake11,
-        price: 3000,
-        name: "vanilla",
+        price: 36000,
+        name: "Red Velvet (Val 3 sets)",
         id: nanoid()
     },
     {
         src: cake12,
-        name: "vanilla",
-        price: 3000,
+        name: "Chocs Fudge (3 layers)",
+        price: 45000,
         id: nanoid()
     },
     {
         src: cake13,
-        name: "vanilla",
-        price: 3000,
+        name: "Funfetti",
+        price: 35000,
         id: nanoid()
     },
     {
         src: cake14,
-        name: "vanilla",
-        price: 3000,
+        name: "Strawberry",
+        price: 25000,
         id: nanoid()
     },
     {
         src: cake15,
-        name: "vanilla",
-        price: 3000,
+        name: "Chocs (1 layer)",
+        price: 20000,
         id: nanoid()
     },
     {
         src: cake16,
-        name: "vanilla",
-        price: 3000,
+        name: "Marble (2 layers)",
+        price: 30000,
         id: nanoid()
     },
     {
         src: cake17,
-        name: "vanilla",
-        price: 3000,
+        name: "Chocs and Vanilla",
+        price: 35000,
         id: nanoid()
     },
     {
         src: cake18,
-        name: "vanilla",
-        price: 3000,
+        name: "Pistachio Rose",
+        price: 20000,
         id: nanoid()
     },
     {
         src: cake19,
         name: "vanilla",
-        price: 3000,
+        price: 20000,
         id: nanoid()
     },
     {
         src: cake20,
-        name: "vanilla",
-        price: 3000,
+        name: "Bento Love",
+        price: 12000,
         id: nanoid()
     },
 ]

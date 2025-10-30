@@ -6,7 +6,6 @@ export const Cakes = () => {
     const { addToCart } = useCart();
 
     const handleAddProduct = (name, price, quantity) => {
-        console.log("yes it clicked")
         const numPrice = parseFloat(price)
         const numQuantity = parseInt(quantity)
         const total = numPrice * numQuantity;
@@ -25,9 +24,9 @@ export const Cakes = () => {
 
                             <div key={cake.id} className="flex p-2 w-full md:p-4 flex-col justfiy-center border border-[#6b5a4c] items-center">
                                 <img src={cake.src} className="h-35 w-30 md:h-45 md:w-40" />
-                                <h1 className="font-semibold md:text-lg">{cake.name}</h1>
-                                <p className="font-bold text-[12px] text-[#6b5a4c]">{cake.price}</p>
-                                <button className="rounded-full mt-3 p-1 bg-[#fa8072] text-[#3e2c23] cursor-pointer text-white text-[10px] font-bold w-20 px-2" onClick={() => handleAddProduct(cake.name, cake.price, 1)}>Order</button>
+                                <h1 className="font-semibold text-[12px] md:text-lg">{cake.name}</h1>
+                                <p className="font-bold text-[12px] text-[#6b5a4c]">{`₦${cake.price}`}</p>
+                                <button className="rounded-full mt-3 p-1 bg-[#e67e22] text-[#3e2c23] cursor-pointer text-white text-[10px] font-bold w-20 px-2" onClick={() => handleAddProduct(cake.name, cake.price, 1)}>Order</button>
                             </div>
 
                         )

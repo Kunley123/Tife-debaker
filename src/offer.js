@@ -8,33 +8,33 @@ import { nanoid } from 'nanoid'
 export const offers = [
     {
         src: offer1,
-        name: "offer1",
-        price: 15000,
+        name: "Valentine Special",
+        price: 22000,
         id: nanoid()
     },
 
     {
         src: offer2,
-        name: "offer2",
-        price: 15000,
+        name: "Birthday Combo",
+        price: 27000,
         id: nanoid()
     },
     {
         src: offer3,
-        name: "offer3",
-        price: 15000,
+        name: "Birthday Combo II",
+        price: 45000,
         id: nanoid()
     },
     {
         src: offer4,
-        name: "offer4",
-        price: 15000,
+        name: "Gift Box (For Him Set)",
+        price: 40000,
         id: nanoid()
     },
     {
         src: offer5,
-        name: "offer5",
-        price: 15000,
+        name: "Parfait (Cup of Sweetness)",
+        price: 4000,
         id: nanoid()
     }
 

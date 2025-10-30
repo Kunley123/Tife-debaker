@@ -13,57 +13,45 @@ import { nanoid } from 'nanoid'
 
 export const crunchies = [
     {
-        name: "crunchy1",
+        name: "Pouched",
         src: crunchy1,
         id: nanoid(),
-        price: 4000
+        price: 2000
     },
     {
-        name: "crunchy2",
+        name: "Small Sized",
         src: crunchy2,
         id: nanoid(),
-        price: 4000
+        price: 3500
     },
     {
-        name: "crunchy3",
-        src: crunchy3,
-        id: nanoid(),
-        price: 4000
-    },
-    {
-        name: "crunchy4",
-        src: crunchy4,
-        id: nanoid(),
-        price: 4000
-    },
-    {
-        name: "crunchy5",
-        src: crunchy5,
-        id: nanoid(),
-        price: 4000
-    },
-    {
-        name: "crunchy6",
+        name: "Big Jar",
         src: crunchy6,
         id: nanoid(),
-        price: 4000
+        price: 8000
     },
     {
-        name: "crunchy7",
+        name: "Big Jar",
         src: crunchy7,
         id: nanoid(),
-        price: 4000
+        price: 8000
     },
     {
-        name: "crunchy8",
+        name: "Midi sized",
         src: crunchy8,
         id: nanoid(),
-        price: 4000
+        price: 5000
     },
     {
-        name: "crunchy9",
+        name: "Family Package",
         src: crunchy9,
         id: nanoid(),
-        price: 4000
+        price: 35000
+    },
+    {
+        name: "Get Together",
+        src: crunchy4,
+        id: nanoid(),
+        price: 33500
     }
 ]

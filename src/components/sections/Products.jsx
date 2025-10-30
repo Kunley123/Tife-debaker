@@ -17,7 +17,7 @@ export const Products = () => {
                                 <img src={image.src} className="" />
                                 <h3 className="font-semibold text-[#3e2c23] md:text-lg">{image.name}</h3>
                                 <p className="font-semibold md:text-lg text-[#6b5a4c] text-[6px] md:text-[14px]">{image.phrase}</p>
-                                <p className="font-bold text-[#3e2c23] text-[12px]">{image.price}</p>
+
                                 <Link to={image.link}>
                                     <button className="rounded-full mt-3 p-1 bg-[#e67e22] text-[#3e2c23] cursor-pointer text-white text-[8px] font-bold w-15 md:w-20 px-2 cursor-pointer">Order Now</button>
                                 </Link>
