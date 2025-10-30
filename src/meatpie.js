@@ -18,7 +18,7 @@ export const meatpies = [
         src: meatpie2
     },
     {
-        name: "Meat Pie (Round)",
+        name: "Round Meat Pie",
         id: nanoid(),
         src: meatpie3
     },
@@ -28,7 +28,7 @@ export const meatpies = [
         src: meatpie4
     },
     {
-        name: "Meat Pie (Brown)",
+        name: "Brown Meat Pie",
         id: nanoid(),
         src: meatpie5
     },
@@ -39,17 +39,17 @@ export const meatpies = [
         src: meatpie7
     },
     {
-        name: "Meat Pie (Not too Brown)",
+        name: "Tasty Meat Pie",
         id: nanoid(),
         src: meatpie8
     },
     {
-        name: "Chicken Pie (Brown)",
+        name: "Brown Chicken Pie",
         id: nanoid(),
         src: meatpie9
     },
     {
-        name: "Meat Pie (Not Brown)",
+        name: "Fresh Meat Pie",
         id: nanoid(),
         src: meatpie10
     }

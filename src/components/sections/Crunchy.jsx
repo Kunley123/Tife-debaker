@@ -20,12 +20,12 @@ export function Crunchies() {
         <section id="crunchy" className="min-h-screen flex items-center justify-center py-20">
             <div className="max-w-5xl mx-auto px-4">
                 <h3 className="text-center font-bold text-3xl text-[#3e2c23]">Crunchy Chinchin</h3>
-                <div className="grid grid-cols-4 my-5 w-full md:w-200 md:grid-cols-5 justify-center">
+                <div className="grid grid-cols-3 my-5 w-full md:w-200 md:grid-cols-5 justify-center">
                     {crunchies.map((crunchy) => {
                         return (
                             <div key={crunchy.id} className="flex py-4 w-full p-1 hover:bg-white md:p-4 flex-col justfiy-center items-center">
                                 <img src={crunchy.src} className="h-45 w-35 md:h-45 md:w-40" />
-                                <h1 className="font-semibold md:text-lg">{crunchy.name}</h1>
+                                <h1 className="font-semibold text-[10px] md:text-lg">{crunchy.name}</h1>
                                 <p className="font-bold text-[12px] text-[#6b5a4c]">{`₦${crunchy.price}`}</p>
                                 <button className="rounded-full mt-3 p-1 bg-[#e67e22] text-[#3e2c23] cursor-pointer text-white text-[10px] font-bold w-20 px-2" onClick={() => handleAddProduct(crunchy.name, crunchy.price, 1)}>Order</button>
                             </div>
